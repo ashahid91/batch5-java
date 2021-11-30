@@ -30,17 +30,15 @@ public class Q2 {
 				strMap.put(c, 1);
 			}
 
-			System.out.println(strMap);
 		}
 		// I will loop through my entryset which is combination of keys and values
 		for (Map.Entry<Character, Integer> entry : strMap.entrySet()) {
 			Character key = entry.getKey(); // [t,e,h,r
 			Integer value = entry.getValue();// [2,3,1,1]
-			System.out.println(key);
-			System.out.println(value);
+			
 			if (value==1) {
 				System.out.println("First non repeater character: " + key + " it occured " + value);
-				
+				break;
 			}
 
 		}
